@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>About Us - WeatherStack + Node.js</title>
+    <meta name="description" content="WeatherStack.com - APILayer.com">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
+    <link rel="stylesheet" href="/css/vanilla-zoom.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar">
+        <div class="container"><a class="navbar-brand logo" href="#">WeatherStack + Node.js</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="navbar-nav ms-auto"></ul>
+            </div>
+        </div>
+    </nav>
+    <main class="text-center d-grid page" style="text-align: center;">
+        <section class="clean-block about-us">
+            <div class="container">
+                <div class="block-heading">
+                    <h2 class="text-info">Ultimate Weather Data Solution - WeatherStack</h2>
+                    <p>Retrieve instant, accurate weather information for any location in the world in lightweight JSON format</p>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="card text-center clean-card">
+                            <div class="card-body info">
+                                <h4 class="card-title"><%- info.location.name %></h4>
+                                <p class="card-text">Wind: <%- info.current.wind_speed %> kmph<br>Precip:&nbsp; <%- info.current.precip %> mm<br>Pressure: <%- info.current.pressure %> mb</p>
+                                <div class="icons"><a href="#"><i class="icon-social-facebook"></i></a><a href="#"><i class="icon-social-instagram"></i></a><a href="#"><i class="icon-social-twitter"></i></a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="card text-center clean-card"><img class="card-img-top w-100 d-block" src="/img/avatars/pexels-tahir-shaw-186980.jpg">
+                            <div class="card-body info">
+                                <h4 class="card-title">Cloud Cover: <%- info.current.cloudcover %></h4>
+                                <p class="card-text"><%- info.current.temperature %>ºC</p>
+                                <div class="icons"><a href="#"><i class="icon-social-facebook"></i></a><a href="#"><i class="icon-social-instagram"></i></a><a href="#"><i class="icon-social-twitter"></i></a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="card text-center clean-card">
+                            <div class="card-body info">
+                                <h4 class="card-title">Feels like: <%- info.current.feelslike %></h4>
+                                <p class="card-text">Observation time: <%- info.current.observation_time %></p>
+                                <div class="icons"><a href="#"><i class="icon-social-facebook"></i></a><a href="#"><i class="icon-social-instagram"></i></a><a href="#"><i class="icon-social-twitter"></i></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="row">
+                            <div class="col">
+                                <header></header>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="page-footer dark">
+        <div class="footer-copyright">
+            <p>© 2021 Copyright APILayer.com</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
+    <script src="/js/vanilla-zoom.js"></script>
+    <script src="/js/theme.js"></script>
+</body>
+
+</html>
